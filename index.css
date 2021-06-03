@@ -1,6 +1,10 @@
 .main {
   background: #FF8F77;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1200px;
 }
 
 .main_content {
@@ -25,8 +29,6 @@
 }
 
 .card_inner {
-  width: 400px;
-  height: 400px;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -44,6 +46,24 @@
           transform: rotateY(180deg);
 }
 
+.card_inner2 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'Mont';
+  font-weight: bold;
+}
+
+.card_inner2.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .card_face {
   position: absolute;
   width: 100%;
@@ -56,9 +76,10 @@
 
 .card_face-front {
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.card_face-front p {
+  margin: auto;
 }
 
 .card_face-front p {
@@ -83,5 +104,57 @@
 
 .mint {
   background: #A5FFF4;
+}
+
+.blue {
+  background: #918EFF;
+}
+
+.yellow {
+  background: #FFFA7C;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.small {
+  width: 300px;
+  height: 300px;
+}
+
+.one {
+  position: absolute;
+  top: 400px;
+}
+
+.two {
+  position: absolute;
+  top: 600px;
+  left: 320px;
+}
+
+.three {
+  position: absolute;
+  top: 700px;
+  left: 540px;
+}
+
+.four {
+  position: absolute;
+  top: 400px;
+  left: 841px;
 }
 /*# sourceMappingURL=index.css.map */
