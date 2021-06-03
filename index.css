@@ -1,0 +1,87 @@
+.main {
+  background: #FF8F77;
+  color: #fff;
+}
+
+.main_content {
+  margin: 60px auto;
+  text-align: center;
+  font-family: 'Mont';
+  width: 530px;
+}
+
+.main_content h1 {
+  font-weight: bold;
+  font-size: 84px;
+}
+
+.main_content p {
+  font-size: 16px;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+}
+
+.card_inner {
+  width: 400px;
+  height: 400px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  font-family: 'Mont';
+  font-weight: bold;
+}
+
+.card_inner.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.card_face-front {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_face-front p {
+  text-align: center;
+  font-size: 200px;
+}
+
+.card_face-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card_face-back p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 12px;
+}
+
+.mint {
+  background: #A5FFF4;
+}
+/*# sourceMappingURL=index.css.map */
