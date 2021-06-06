@@ -1,10 +1,10 @@
 .main {
   background: #FF8F77;
   color: #fff;
+  height: auto;
 }
 
 .main_content {
-  margin: 60px auto;
   text-align: center;
   font-family: 'Mont';
   width: 530px;

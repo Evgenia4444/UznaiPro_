@@ -1,10 +1,10 @@
 .main {
     background: #FF8F77;
     color: #fff;
-    
+    height: auto;
 
     &_content {
-        margin: 60px auto;
+       
         text-align: center;
         font-family: 'Mont';
         width: 530px;
@@ -31,6 +31,7 @@
 .card {
     position: relative;
 }
+
 .card_inner {
     
     transition: transform 1s;
