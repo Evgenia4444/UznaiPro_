@@ -1,7 +1,7 @@
 .main {
-  background: #FF8F77;
+  background: #E2D97D;
   color: #fff;
-  height: auto;
+  height: 200%;
 }
 
 .main_content {
@@ -24,6 +24,7 @@
   display: -ms-flexbox;
   display: flex;
   height: auto;
+  position: relative;
 }
 
 .card {
@@ -97,67 +98,164 @@
   background: #FFFA7C;
 }
 
+.red {
+  background: #F2A094;
+}
+
 .large {
-  width: 43.57vw;
-  height: 43.57vw;
+  width: 24.30vw;
+  height: 24.30vw;
 }
 
 .medium {
-  width: 31vw;
-  height: 31vw;
+  width: 20.83vw;
+  height: 20.83vw;
 }
 
 .small {
-  width: 20.8vw;
-  height: 20.8vw;
+  width: 17.36vw;
+  height: 17.36vw;
+}
+
+.content {
+  width: 65.6vw;
+  height: 27.6vw;
+  font-size: 32px;
+}
+
+.main_content .header {
+  font-size: 100px;
+  float: left;
+  padding: 30px 84px;
+}
+
+.freeform1 {
+  width: 59vw;
+  height: 20.83vw;
 }
 
 .one {
-  z-index: 24;
+  z-index: 1;
+  -webkit-transform: translate(35%, 0%);
+          transform: translate(35%, 0%);
+}
+
+.freeform2 {
+  width: 20.55vw;
+  height: 20.83vw;
 }
 
 .two {
-  -webkit-transform: translate(10%, 25%);
-          transform: translate(10%, 25%);
-  z-index: 30;
+  -webkit-transform: translate(240%, 0%);
+          transform: translate(240%, 0%);
+  float: right;
+  z-index: 2;
 }
 
 .three {
-  -webkit-transform: translate(6.25%, 80%);
-          transform: translate(6.25%, 80%);
-  z-index: 25;
+  -webkit-transform: translate(210%, 0%);
+          transform: translate(210%, 0%);
+  z-index: 9;
 }
 
 .four {
-  float: right;
-  z-index: 22;
+  -webkit-transform: translate(164%, 120%);
+          transform: translate(164%, 120%);
+  z-index: 3;
 }
 
 .five {
   float: left;
-  -webkit-transform: translate(-130%, 55%);
-          transform: translate(-130%, 55%);
-  z-index: 23;
+  -webkit-transform: translate(-64%, 60%);
+          transform: translate(-64%, 60%);
+  z-index: 10;
 }
 
 .six {
   float: left;
-  -webkit-transform: translate(-56.8%, -15%);
-          transform: translate(-56.8%, -15%);
+  -webkit-transform: translate(-100%, 17%);
+          transform: translate(-100%, 17%);
   z-index: 27;
 }
 
 .seven {
   float: left;
-  -webkit-transform: translate(41%, -170%);
-          transform: translate(41%, -170%);
+  -webkit-transform: translate(-184%, -70%);
+          transform: translate(-184%, -70%);
   z-index: 27;
 }
 
 .eight {
   float: left;
+  -webkit-transform: translate(-320%, -220%);
+          transform: translate(-320%, -220%);
+  z-index: 11;
+}
+
+.nine {
+  float: left;
+  -webkit-transform: translate(-248%, -172%);
+          transform: translate(-248%, -172%);
+  z-index: 6;
+}
+
+.ten {
+  float: left;
+  -webkit-transform: translate(-207%, -340%);
+          transform: translate(-207%, -340%);
+  z-index: 7;
+}
+
+.freeform3 {
+  width: 35vw;
+  height: 20.83vw;
+}
+
+.eleven {
+  float: left;
+  -webkit-transform: translate(-55%, -383%);
+          transform: translate(-55%, -383%);
+  z-index: 8;
+}
+
+.twelve {
+  float: left;
+  -webkit-transform: translate(0%, -574%);
+          transform: translate(0%, -574%);
+  z-index: 32;
+}
+
+.thirteen {
+  float: left;
+  -webkit-transform: translate(65%, -494%);
+          transform: translate(65%, -494%);
+  z-index: 29;
+}
+
+.forteen {
+  float: left;
   -webkit-transform: translate(-130%, -124%);
           transform: translate(-130%, -124%);
   z-index: 27;
+  opacity: 0;
+}
+
+.fifteen {
+  float: left;
+  -webkit-transform: translate(-130%, -124%);
+          transform: translate(-130%, -124%);
+  z-index: 27;
+  opacity: 0;
+}
+
+.indexone {
+  z-index: 200;
+}
+
+.mockupImage {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=index.css.map */

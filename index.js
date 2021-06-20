@@ -6,6 +6,8 @@
 
 document.querySelectorAll('.card_inner').forEach(item => {
     item.addEventListener('click', event => {
-        item.classList.toggle('is-flipped')
+        item.classList.toggle('is-flipped');
+        
+      
     })
   })
