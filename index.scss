@@ -229,3 +229,34 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+.smallText {
+    h3 {
+        font-size: 120px;
+       
+    }
+    p{
+        font-size: 14px;
+        width: 60%;
+    }
+}
+
+.mediumText {
+    h3 {
+        font-size: 150px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+.largeText {
+    h3 {
+        font-size: 184px;
+    }
+    p{
+        font-size: 24px;
+        width: 70%;
+        padding: 0 18px;
+    }
+}

@@ -258,4 +258,31 @@
   background-size: cover;
   background-position: center;
 }
+
+.smallText h3 {
+  font-size: 120px;
+}
+
+.smallText p {
+  font-size: 14px;
+  width: 60%;
+}
+
+.mediumText h3 {
+  font-size: 150px;
+}
+
+.mediumText p {
+  font-size: 18px;
+}
+
+.largeText h3 {
+  font-size: 184px;
+}
+
+.largeText p {
+  font-size: 24px;
+  width: 70%;
+  padding: 0 18px;
+}
 /*# sourceMappingURL=index.css.map */
