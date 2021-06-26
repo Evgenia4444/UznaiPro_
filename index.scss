@@ -26,8 +26,9 @@
 
 .firstRow {
     display: flex;
-    height: auto;
+    
     position: relative;
+    min-height: 600px;
 }
 
 .card {
@@ -117,6 +118,7 @@ p {
         font-size: 100px;
         float: left;
         padding: 30px 84px;
+        white-space: nowrap;
     }
 }
 .freeform1 {
@@ -127,6 +129,8 @@ p {
   
     z-index: 1;
     transform: translate(35%, 0%);
+
+   
 }
 .freeform2 {
     width: 20.55vw;
@@ -176,12 +180,14 @@ p {
     float: left;
     transform: translate(-248%, -172%);
     z-index: 6;
+  
     
 }
 .ten {
     float: left;
     transform: translate(-207%, -340%);
     z-index: 7;
+    
     
 }
 .freeform3 {
@@ -192,6 +198,7 @@ p {
     float: left;
     transform: translate(-55%, -383%);
     z-index: 8;
+    
    
 }
 .twelve {
@@ -204,6 +211,7 @@ p {
     float: left;
     transform: translate(65%, -494%);
     z-index: 29;
+   
   
 }
 .forteen {
@@ -223,11 +231,29 @@ p {
     z-index: 200;
 }
 
-.mockupImage {
+.mockup1 {
+
+}
+.mockupImage1 {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-image: url(./images/mockup1.jpg);
+    height: 1600px;
+}
+
+.mockup2 {
+    height: 800px;
+}
+.mockupImage2 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-image: url(./images/mockup2.jpg);
+    height: 100%;
+    margin-top: 0;
 }
 
 .smallText {
@@ -258,5 +284,41 @@ p {
         font-size: 24px;
         width: 70%;
         padding: 0 18px;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .main_content {
+        .header {
+            font-size: 64px;
+        }
+    }
+}
+
+
+.noTurn {
+    cursor: pointer;
+    position: absolute;
+    font-family: 'Mont';
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1601px) {
+    .mockup1 {
+        margin-top: -10vw;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .mockup1 {
+        margin-top: -14vw;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+    .mockup1 {
+        margin-top: -20vw;
     }
 }
