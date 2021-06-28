@@ -129,6 +129,38 @@ $(window).on("scroll", function(){
     });
   });
 
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".poster1").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-560) {
+        $(".poster1").removeClass("visible");
+        $(".poster1").removeClass("left");
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        $(this).addClass("left");
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".poster2").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-400) {
+        $(".poster3").removeClass("visible");
+        $(".poster2").removeClass("right");
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        $(this).addClass("right");
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
 // const scrollElement2 = document.querySelector(".mockupSmall3_inner");
  
 // const elementInView = (el, offset = 0) => {
