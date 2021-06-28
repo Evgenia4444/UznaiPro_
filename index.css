@@ -363,36 +363,4 @@ body {
 .lastindex {
   z-index: 3000;
 }
-
-.mockupSmall1 {
-  background-image: url(./images/mockup12.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 59vw;
-  height: 50vw;
-  -webkit-transform: translate(20%);
-          transform: translate(20%);
-}
-
-.mockupSmall2 {
-  width: 41vw;
-  height: 50vw;
-  -webkit-transform: translate();
-          transform: translate();
-}
-
-.mockupSmall2 video {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.mockupRow2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  min-height: 400px;
-}
 /*# sourceMappingURL=index.css.map */

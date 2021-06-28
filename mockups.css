@@ -1,0 +1,69 @@
+.mockupSmall1 {
+  width: 59vw;
+  height: 50vw;
+  -webkit-transform: translate(0%, 44%);
+          transform: translate(0%, 44%);
+  position: relative;
+}
+
+.mockupSmall1 .mockupSmall1_inner {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  width: 59vw;
+  height: 50vw;
+}
+
+.mockupSmall1 .mockupSmall1_inner.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.mockupSmall1 .mockupSmall1_inner .mockup_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.mockupSmall1 .mockupSmall1_inner .mockup_face-front {
+  background-color: #FF5D44;
+}
+
+.mockupSmall1 .mockupSmall1_inner .mockup_face-back {
+  background-image: url(./images/mockup12.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.mockupSmall2 {
+  width: 41vw;
+  height: 50vw;
+  -webkit-transform: translate(144%, -55%);
+          transform: translate(144%, -55%);
+}
+
+.mockupSmall2 video {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mockupRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 400px;
+}
+/*# sourceMappingURL=mockups.css.map */

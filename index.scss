@@ -349,34 +349,3 @@ z-index: 4;
 }
 
 
-.mockupSmall1 {
-    background-image: url(./images/mockup12.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 59vw;
-    height: 50vw;
-    translate(0%, 44%)
-    
-}
-
-.mockupSmall2 {
-    // background-image: url(./images/mockup2.jpg);
-    // background-position: center;
-    // background-size: cover;
-    width: 41vw;
-    height: 50vw;
-    transform: translate(144%, -55%);
-
-    
-    video {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-}
-
-.mockupRow2 {
-display: flex;
-position: relative;
-min-height: 400px;
-}
