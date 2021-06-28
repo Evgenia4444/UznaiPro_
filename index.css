@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .main {
   background: #E2D97D;
   color: #fff;
@@ -19,12 +23,21 @@
   font-size: 16px;
 }
 
+.main_content .desc {
+  font-size: 24px;
+  margin-left: 84px;
+  width: 54%;
+  text-align: left;
+  font-weight: 300;
+}
+
 .firstRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   min-height: 600px;
+  z-index: 5;
 }
 
 .card {
@@ -87,19 +100,19 @@
 }
 
 .mint {
-  background: #A5FFF4;
+  background: #09E092;
 }
 
 .purple {
-  background: #918EFF;
+  background: #373FE0;
 }
 
 .yellow {
-  background: #FFFA7C;
+  background: #E0CE16;
 }
 
 .red {
-  background: #F2A094;
+  background: #FF5D44;
 }
 
 .large {
@@ -126,7 +139,7 @@
 .main_content .header {
   font-size: 100px;
   float: left;
-  padding: 30px 84px;
+  padding: 30px 84px 0px;
   white-space: nowrap;
 }
 
@@ -253,6 +266,10 @@
   z-index: 200;
 }
 
+.mockup1 {
+  z-index: 4;
+}
+
 .mockupImage1 {
   width: 100%;
   background-repeat: no-repeat;
@@ -260,6 +277,15 @@
   background-position: center;
   background-image: url(./images/mockup1.jpg);
   height: 1600px;
+}
+
+.video {
+  width: 100%;
+  height: 1000px;
+}
+
+.video video {
+  width: 100%;
 }
 
 .mockup2 {
@@ -332,5 +358,41 @@
   .mockup1 {
     margin-top: -20vw;
   }
+}
+
+.lastindex {
+  z-index: 3000;
+}
+
+.mockupSmall1 {
+  background-image: url(./images/mockup12.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 59vw;
+  height: 50vw;
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+}
+
+.mockupSmall2 {
+  width: 41vw;
+  height: 50vw;
+  -webkit-transform: translate();
+          transform: translate();
+}
+
+.mockupSmall2 video {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mockupRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 400px;
 }
 /*# sourceMappingURL=index.css.map */

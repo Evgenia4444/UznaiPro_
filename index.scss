@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .main {
     background: #E2D97D;
     color: #fff;
@@ -19,6 +22,15 @@
             font-size: 16px;
         }
 
+        .desc {
+            font-size: 24px;
+            margin-left: 84px;
+            width: 54%;
+            text-align: left;
+            font-weight: 300;
+
+        }
+
        
     }
 }
@@ -29,6 +41,7 @@
     
     position: relative;
     min-height: 600px;
+    z-index: 5;
 }
 
 .card {
@@ -83,16 +96,16 @@ p {
 }
 
 .mint {
-    background: #A5FFF4;
+    background: #09E092;
 }
 .purple {
-    background: #918EFF;
+    background: #373FE0;
 }
 .yellow {
-    background: #FFFA7C;
+    background: #E0CE16;
 }
 .red {
-    background: #F2A094;
+    background: #FF5D44;
 }
 
 .large {
@@ -117,7 +130,7 @@ p {
     .header {
         font-size: 100px;
         float: left;
-        padding: 30px 84px;
+        padding: 30px 84px 0px;
         white-space: nowrap;
     }
 }
@@ -232,7 +245,7 @@ p {
 }
 
 .mockup1 {
-
+z-index: 4;
 }
 .mockupImage1 {
     width: 100%;
@@ -328,4 +341,42 @@ p {
     .mockup1 {
         margin-top: -20vw;
     }
+}
+
+
+.lastindex {
+    z-index: 3000;
+}
+
+
+.mockupSmall1 {
+    background-image: url(./images/mockup12.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 59vw;
+    height: 50vw;
+    translate(0%, 44%)
+    
+}
+
+.mockupSmall2 {
+    // background-image: url(./images/mockup2.jpg);
+    // background-position: center;
+    // background-size: cover;
+    width: 41vw;
+    height: 50vw;
+    transform: translate(144%, -55%);
+
+    
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.mockupRow2 {
+display: flex;
+position: relative;
+min-height: 400px;
 }
