@@ -28,7 +28,7 @@ document.querySelectorAll('.card_inner').forEach(item => {
 // var tl2 = new TimelineMax();
 // const controller = new ScrollMagic.Controller();
 
-// tl.from('.mockupSmall1_inner', .5, { opacity: 0});
+// tl.from('.mockupSmall3_inner', .5, { opacity: 0});
 // tl.from('span', 1, { width: 0}, "=-.5");
 // tl.from('#office', 1, {x:-200, opacity: 0,ease: Power4.easeInOut}, "=-1");
 // tl.from('#building', 1, {x:200, opacity: 0, ease: Power4.easeInOut}, "=-.7");
@@ -82,7 +82,8 @@ document.querySelectorAll('.card_inner').forEach(item => {
 
 const scrollOffset = 100;
  
-const scrollElement = document.querySelector(".mockupSmall1_inner");
+const scrollElement1 = document.querySelector(".mockupSmall1_inner");
+const scrollElement3 = document.querySelector(".mockupSmall3_inner");
  
 const elementInView = (el, offset = 0) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -94,15 +95,16 @@ const elementInView = (el, offset = 0) => {
 };
  
 const displayScrollElement = () => {
-  scrollElement.classList.add('is-flipped');
+  scrollElement1.classList.add('is-flipped');
+  scrollElement1.classList.add('visible');
 }
  
 const hideScrollElement = () => {
-  scrollElement.classList.remove('is-flipped');
+  scrollElement1.classList.remove('is-flipped');
 }
  
 const handleScrollAnimation = () => {
-  if (elementInView(scrollElement, scrollOffset)) {
+  if (elementInView(scrollElement1, scrollOffset)) {
       displayScrollElement();
   } else {
     hideScrollElement();
@@ -113,3 +115,47 @@ window.addEventListener('scroll', () => {
   handleScrollAnimation();
 })
 
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".mockupSmall3_inner").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-1200) {
+        $(".mockupSmall3").removeClass("visible");
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
+// const scrollElement2 = document.querySelector(".mockupSmall3_inner");
+ 
+// const elementInView = (el, offset = 0) => {
+//   const elementTop = el.getBoundingClientRect().top;
+ 
+//   return (
+//     elementTop <= 
+//     ((window.innerHeight || document.documentElement.clientHeight) - offset)
+//   );
+// };
+ 
+// const displayScrollElement = () => {
+//   scrollElement2.classList.add('is-flipped');
+// }
+ 
+// const hideScrollElement = () => {
+//   scrollElement2.classList.remove('is-flipped');
+// }
+ 
+// const handleScrollAnimation = () => {
+//   if (elementInView(scrollElement2, scrollOffset)) {
+//       displayScrollElement();
+//   } else {
+//     hideScrollElement();
+//   }
+// }
+ 
+// window.addEventListener('scroll', () => {
+//   handleScrollAnimation();
+// })
