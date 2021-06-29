@@ -305,6 +305,9 @@ body {
 
 .smallText h3 {
   font-size: 120px;
+  position: absolute;
+  top: 16%;
+  right: 38%;
 }
 
 .smallText p {
@@ -322,6 +325,9 @@ body {
 
 .largeText h3 {
   font-size: 184px;
+  position: absolute;
+  top: 12%;
+  right: 35%;
 }
 
 .largeText p {
