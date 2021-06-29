@@ -278,6 +278,17 @@
   }
 }
 
+@media screen and (min-width: 1300px) {
+  .mockupSmall3 {
+    -webkit-transform: translate(143.88%, -276%);
+            transform: translate(143.88%, -276%);
+  }
+  .mockupSmall5 {
+    -webkit-transform: translateY(-146%);
+            transform: translateY(-146%);
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .mockupSmall5 {
     -webkit-transform: translateY(-145.5%);
