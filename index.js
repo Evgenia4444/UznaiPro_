@@ -245,7 +245,7 @@ $(window).on("scroll", function(){
   
     $(".mockupSmall6").removeClass("visible").each(function () {
       let section = $(this).offset().top;
-      if(winTop >= section-1400) {
+      if(winTop >= section-1300) {
         $(".mockupSmall6").removeClass("visible");
         
         // $(".mockupSmall3").removeClass("is-flipped");
