@@ -236,8 +236,8 @@
 .mockupSmall6 {
   width: 59vw;
   height: 50vw;
-  -webkit-transform: translate(0%, 44%);
-          transform: translate(0%, 44%);
+  -webkit-transform: translate(0%, -176%);
+          transform: translate(0%, -176%);
   position: relative;
 }
 
@@ -274,6 +274,51 @@
 
 .mockupSmall6 .mockupSmall6_inner .mockup_face-back {
   background-image: url(./images/tshirt.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mockupSmall7 {
+  width: 41vw;
+  height: 50vw;
+  -webkit-transform: translate(144%, -276%);
+          transform: translate(144%, -276%);
+  position: relative;
+}
+
+.mockupSmall7 .mockupSmall7_inner {
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  width: 41vw;
+  height: 50vw;
+}
+
+.mockupSmall7 .mockupSmall7_inner.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.mockupSmall7 .mockupSmall7_inner .mockup_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.mockupSmall7 .mockupSmall7_inner .mockup_face-front {
+  background-color: #FF5D44;
+}
+
+.mockupSmall7 .mockupSmall7_inner .mockup_face-back {
+  background-image: url(./images/mockup2.jpg);
   background-position: center;
   background-size: cover;
 }

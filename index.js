@@ -96,11 +96,14 @@ const elementInView = (el, offset = 0) => {
  
 const displayScrollElement = () => {
   scrollElement1.classList.add('is-flipped');
+  scrollElement3.classList.add('is-flipped');
   scrollElement1.classList.add('visible');
+  scrollElement3.classList.add('visible');
 }
  
 const hideScrollElement = () => {
   scrollElement1.classList.remove('is-flipped');
+  scrollElement3.classList.remove('is-flipped');
 }
  
 const handleScrollAnimation = () => {
@@ -114,6 +117,9 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', () => {
   handleScrollAnimation();
 })
+
+
+
 
 $(window).on("scroll", function(){
     let winTop = $(this).scrollTop();
