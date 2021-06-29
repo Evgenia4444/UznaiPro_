@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background: #FF5D44
 }
 .main {
     background: #E2D97D;
@@ -88,7 +89,7 @@ p {
 
         p{
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
             margin: 12px ;
         }
@@ -222,7 +223,7 @@ p {
 }
 .thirteen {
     float: left;
-    transform: translate(65%, -494%);
+    transform: translate(65%, -500%);
     z-index: 29;
    
   

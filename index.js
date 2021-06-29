@@ -151,11 +151,27 @@ $(window).on("scroll", function(){
     $(".poster2").removeClass("visible").each(function () {
       let section = $(this).offset().top;
       if(winTop >= section-400) {
-        $(".poster3").removeClass("visible");
+        $(".poster2").removeClass("visible");
         $(".poster2").removeClass("right");
         // $(".mockupSmall3").removeClass("is-flipped");
         $(this).addClass("visible");
         $(this).addClass("right");
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".mockupSmall4").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-3200) {
+        $(".mockupSmall4").removeClass("visible");
+        
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        
         // $(this).addClass("is-flipped");
       }
     });
