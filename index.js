@@ -83,8 +83,7 @@ document.querySelectorAll('.card_inner').forEach(item => {
 const scrollOffset = 100;
  
 const scrollElement1 = document.querySelector(".mockupSmall1_inner");
-const scrollElement3 = document.querySelector(".mockupSmall3_inner");
-const scrollElement4 = document.querySelector(".mockupSmall6_inner");
+
  
 const elementInView = (el, offset = 0) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -99,8 +98,7 @@ const displayScrollElement = () => {
   scrollElement1.classList.add('is-flipped');
 
   scrollElement1.classList.add('visible');
-  scrollElement4.classList.add('is-flipped');
-  // scrollElement3.classList.add('is-flipped');
+
 
   
  
@@ -108,8 +106,7 @@ const displayScrollElement = () => {
  
 const hideScrollElement = () => {
   scrollElement1.classList.remove('is-flipped');
-  scrollElement4.classList.remove('is-flipped');
-  scrollElement3.classList.remove('is-flipped');
+
   
 }
  
@@ -208,6 +205,25 @@ $(window).on("scroll", function(){
     });
   });
 
+
+
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".mockupSmall7").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-850) {
+        $(".mockupSmall7").removeClass("visible");
+        
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
+
 $(window).on("scroll", function(){
     let winTop = $(this).scrollTop();
   
@@ -227,25 +243,10 @@ $(window).on("scroll", function(){
 $(window).on("scroll", function(){
     let winTop = $(this).scrollTop();
   
-    $(".mockupSmall7").removeClass("visible").each(function () {
+    $(".mockupSmall6").removeClass("visible").each(function () {
       let section = $(this).offset().top;
-      if(winTop >= section-850) {
-        $(".mockupSmall7").removeClass("visible");
-        
-        // $(".mockupSmall3").removeClass("is-flipped");
-        $(this).addClass("visible");
-        
-        // $(this).addClass("is-flipped");
-      }
-    });
-  });
-$(window).on("scroll", function(){
-    let winTop = $(this).scrollTop();
-  
-    $(".mockupSmall3").removeClass("visible").each(function () {
-      let section = $(this).offset().top;
-      if(winTop >= section-500) {
-        $(".mockupSmall3").removeClass("visible");
+      if(winTop >= section-1400) {
+        $(".mockupSmall6").removeClass("visible");
         
         // $(".mockupSmall3").removeClass("is-flipped");
         $(this).addClass("visible");

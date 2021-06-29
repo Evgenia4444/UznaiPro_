@@ -63,12 +63,12 @@
 }
 
 .mockupSmall3 {
-    
+    transition: opacity 1.5s;
     width: 41vw;
     height: 25vw;
    transform:  translate(143.88%, -310%);
    position: relative;
-   
+   opacity: 0;
 
 
     .mockupSmall3_inner {
@@ -270,7 +270,7 @@ min-height: 400px;
 
 
 .mockupSmall7 {
-    
+    transition: 1.5s;
     width: 41vw;
     height: 50vw;
    transform:  translate(144%, -276%);

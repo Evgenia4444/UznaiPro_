@@ -64,11 +64,14 @@
 }
 
 .mockupSmall3 {
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
   width: 41vw;
   height: 25vw;
   -webkit-transform: translate(143.88%, -310%);
           transform: translate(143.88%, -310%);
   position: relative;
+  opacity: 0;
 }
 
 .mockupSmall3 .mockupSmall3_inner {
@@ -284,6 +287,8 @@
 }
 
 .mockupSmall7 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   width: 41vw;
   height: 50vw;
   -webkit-transform: translate(144%, -276%);
