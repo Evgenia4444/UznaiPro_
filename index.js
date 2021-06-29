@@ -8,7 +8,7 @@
 document.querySelectorAll('.card_inner').forEach(item => {
     item.addEventListener('click', event => {
         item.classList.toggle('is-flipped');
-        item.classList.toggle('lastindex')
+        // item.classList.toggle('lastindex')
 
     })
 })
@@ -166,7 +166,7 @@ $(window).on("scroll", function(){
   
     $(".mockupSmall4").removeClass("visible").each(function () {
       let section = $(this).offset().top;
-      if(winTop >= section-3200) {
+      if(winTop >= section-500) {
         $(".mockupSmall4").removeClass("visible");
         
         // $(".mockupSmall3").removeClass("is-flipped");
