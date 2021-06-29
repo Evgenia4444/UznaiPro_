@@ -78,10 +78,11 @@
         opacity: 0;
         width: 41vw;
         height: 28vw;
+        
        
-        &.visible {
-            opacity: 1;
-        }
+       &.visible {
+           opacity: 1;
+       }
 
         &.is-flipped {
             transform: rotateY(180deg);
@@ -115,9 +116,6 @@ min-height: 400px;
 }
 
 
-.visible {
-    opacity: 1;
-}
 
 
 .mockupPosters_container {
@@ -223,13 +221,13 @@ min-height: 400px;
 
 
 .mockupSmall6 {
-    
+    transition: 1.5s;
     width: 59vw;
     height: 50vw;
    transform:  translate(0%, -176%);
    position: relative;
+   opacity: 0;
    
-
 
     .mockupSmall6_inner {
         transition: transform 1.5s;
@@ -239,11 +237,14 @@ min-height: 400px;
         width: 59vw;
         height: 50vw;
        
-  
+        &.visible {
+            opacity: 1;
+        }
 
         &.is-flipped {
             transform: rotateY(180deg);
         }
+      
 
         .mockup_face {
             position: absolute;
@@ -261,7 +262,7 @@ min-height: 400px;
             background-image: url(./images/tshirt.jpg);
         background-position: center;
         background-size: cover;
-        // transform: rotateY(180deg);
+        transform: rotateY(180deg);
         }
     }
     
@@ -274,7 +275,7 @@ min-height: 400px;
     height: 50vw;
    transform:  translate(144%, -276%);
    position: relative;
-   
+   opacity: 0;
 
 
     .mockupSmall7_inner {
@@ -285,8 +286,10 @@ min-height: 400px;
         width: 41vw;
         height: 50vw;
        
-  
-
+        &.visible {
+            opacity: 1;
+        }
+    
         &.is-flipped {
             transform: rotateY(180deg);
         }
@@ -369,4 +372,9 @@ transform: translateY(-146%);
     .mockupSmall5 {
         transform: translateY(-145.5%);
     }
+}
+
+
+.visible {
+    opacity: 1;
 }
