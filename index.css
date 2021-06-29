@@ -25,11 +25,11 @@ body {
 }
 
 .main_content .desc {
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 84px;
-  width: 54%;
+  width: 60%;
   text-align: left;
-  font-weight: 300;
+  font-weight: regular;
 }
 
 .firstRow {
