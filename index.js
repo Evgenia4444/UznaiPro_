@@ -177,6 +177,23 @@ $(window).on("scroll", function(){
     });
   });
 
+
+$(window).on("scroll", function(){
+    let winTop = $(this).scrollTop();
+  
+    $(".mockupSmall5").removeClass("visible").each(function () {
+      let section = $(this).offset().top;
+      if(winTop >= section-500) {
+        $(".mockupSmall5").removeClass("visible");
+        
+        // $(".mockupSmall3").removeClass("is-flipped");
+        $(this).addClass("visible");
+        
+        // $(this).addClass("is-flipped");
+      }
+    });
+  });
+
 // const scrollElement2 = document.querySelector(".mockupSmall3_inner");
  
 // const elementInView = (el, offset = 0) => {

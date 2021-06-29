@@ -37,7 +37,7 @@
            background-color: #FF5D44;
         }
         .mockup_face-back {
-            background-image: url(./images/mockup12.jpg);
+            background-image: url(./images/mockup11.jpg);
         background-position: center;
         background-size: cover;
         transform: rotateY(180deg);
@@ -197,6 +197,33 @@ min-height: 400px;
     }
 }
 
+.mockupSmall5 {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    transform: translateY(-140%);
+    transition: 1.5s;
+    opacity: 0;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    .mockupTshirt {
+         
+        background-image: url(./images/mockupCase.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
 .mockupRow1 {
     max-height: 1200px;
 }
@@ -214,6 +241,14 @@ min-height: 400px;
 }
 }
 
+@media screen and (min-width: 1230px) {
+   
+    .mockupSmall3 {
+        transform: translate(143.88%, -276%);
+    }
+
+}
+
 @media screen and (min-width: 1279px) {
     .mockupSmall1 {
         transform: translate(0%, 18%);
@@ -229,3 +264,8 @@ min-height: 400px;
 }
 }
 
+@media screen and (max-width: 1280px) {
+    .mockupSmall5 {
+        transform: translateY(-145.5%);
+    }
+}
